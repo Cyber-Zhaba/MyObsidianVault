@@ -1,0 +1,238 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "Meta/Templates/Задачи template.md"
+      ],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Задачи",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "created": {
+                "hide": true
+              },
+              "completed": {
+                "width": 147
+              },
+              "name": {
+                "width": 126
+              },
+              "deadline": {
+                "width": 129
+              },
+              "updated": {
+                "hide": true
+              }
+            },
+            "orderFields": [
+              "name",
+              "completed",
+              "created",
+              "deadline",
+              "priority",
+              "status",
+              "tags",
+              "updated"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": [
+              {
+                "field": "completed",
+                "operator": "is-not-checked",
+                "enabled": false
+              },
+              {
+                "field": "status",
+                "operator": "not-contains",
+                "enabled": false,
+                "value": "🔎"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "deadline",
+                "order": "asc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "62a35ec8-7183-4259-abd7-7cb0768637c1",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "groupByField": "status",
+            "columns": {
+              "📁 Не начато": {
+                "records": [
+                  "Задачи/sd.md",
+                  "Задачи/в.md",
+                  "Задачи/плюсы (.md",
+                  "Задачи/плюсы.md",
+                  "Задачи/ывдаож.md",
+                  "Задачи/as.md",
+                  "Задачи/asd 1.md",
+                  "Задачи/asd.md",
+                  "Задачи/s.md",
+                  "Задачи/sdsdsd.md",
+                  "Задачи/Untitled 4.md",
+                  "Задачи/Untitled.md"
+                ],
+                "weight": 0
+              },
+              "🔥 В работе": {
+                "weight": 1,
+                "records": [
+                  "Задачи/Алгосиски.md",
+                  "Задачи/Untitled 2.md"
+                ]
+              },
+              "🔎 Ревью": {
+                "weight": 2
+              }
+            }
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "d39a080f-4756-4eb6-b71c-98da726642f8",
+          "name": "Board",
+          "type": "board"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "e86c4c33-ee44-4d9e-956b-116cfccb8b0e",
+          "name": "Calendar",
+          "type": "calendar"
+        }
+      ],
+      "id": "2dffde9f-1849-4543-af38-09f0c508d4f1",
+      "name": "Задачи"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "Meta/Templates/Конспект template.md"
+      ],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "Конспекты",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "orderFields": [
+              "name",
+              "created",
+              "subject",
+              "tags"
+            ],
+            "fieldConfig": {
+              "updated": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              }
+            }
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "cf47605d-591f-4979-8114-041e2e33a354",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "6f2ae4d4-b783-4e37-97de-1ca1c6fcb196",
+          "name": "Calendar",
+          "type": "calendar"
+        }
+      ],
+      "id": "cf15f974-0437-4702-8cb5-5d93a585e158",
+      "name": "Конспекты"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "monday"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

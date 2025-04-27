@@ -1,0 +1,54 @@
+{
+  "dualConfigs": false,
+  "showConsoleLog": false,
+  "desktop": {
+    "shortDelaySeconds": 2,
+    "longDelaySeconds": 10,
+    "delayBetweenPlugins": 40,
+    "defaultStartupType": null,
+    "showDescriptions": true,
+    "enableDependencies": false,
+    "plugins": {
+      "obsidian-charts": {
+        "startupType": "instant"
+      },
+      "obsidian-columns": {
+        "startupType": "instant"
+      },
+      "dataview": {
+        "startupType": "instant"
+      },
+      "obsidian-excalidraw-plugin": {
+        "startupType": "short"
+      },
+      "homepage": {
+        "startupType": "instant"
+      },
+      "obsidian-kanban": {
+        "startupType": "long"
+      },
+      "obsidian-latex-suite": {
+        "startupType": "short"
+      },
+      "url-into-selection": {
+        "startupType": "short"
+      },
+      "obsidian-projects": {
+        "startupType": "short"
+      },
+      "quickadd": {
+        "startupType": "instant"
+      },
+      "obsidian-spaced-repetition": {
+        "startupType": "long"
+      },
+      "templater-obsidian": {
+        "startupType": "short"
+      },
+      "update-time-on-edit": {
+        "startupType": "instant"
+      }
+    },
+    "loadOrder": []
+  }
+}

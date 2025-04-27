@@ -1,0 +1,9 @@
+{
+  "baseFontSizeAction": true,
+  "baseFontSize": 22,
+  "cssTheme": "Dekurai",
+  "enabledCssSnippets": [
+    "dashboard",
+    "dashboard-ReadLineLength"
+  ]
+}

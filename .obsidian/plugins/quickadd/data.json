@@ -1,0 +1,174 @@
+{
+  "choices": [
+    {
+      "id": "d7fec955-63cd-4f1b-9487-1af81776edde",
+      "name": "Добавить новую задачу",
+      "type": "Macro",
+      "command": false,
+      "macroId": "6cba41aa-1138-4a97-acd7-19250b386bad"
+    },
+    {
+      "id": "8a50b98d-6b1e-4184-9216-b107bdf1216d",
+      "name": "Добавить конспект",
+      "type": "Macro",
+      "command": false,
+      "macroId": "a33ecf90-86db-49d0-befa-675460fb26d8"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Новая задача",
+      "id": "6cba41aa-1138-4a97-acd7-19250b386bad",
+      "commands": [
+        {
+          "name": "Причина тряски",
+          "type": "NestedChoice",
+          "id": "db921fe1-a1c8-41e9-82bf-b97fc9b2d669",
+          "choice": {
+            "id": "94478021-8216-45dc-8aba-a09a1f6e2bda",
+            "name": "Причина тряски",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Meta/Templates/Задачи template.md",
+            "fileNameFormat": {
+              "enabled": false,
+              "format": ""
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Задачи"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Добавить конспект",
+      "id": "a33ecf90-86db-49d0-befa-675460fb26d8",
+      "commands": [
+        {
+          "name": "Что на этот раз?",
+          "type": "NestedChoice",
+          "id": "c5b54074-1513-4c50-87f8-c74fd86a28c3",
+          "choice": {
+            "id": "fa4e7bb1-7a9b-4fb3-84da-aab3ab46e7a3",
+            "name": "Что на этот раз?",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Meta/Templates/Конспект template.md",
+            "fileNameFormat": {
+              "enabled": false,
+              "format": ""
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Конспекты"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "",
+  "announceUpdates": false,
+  "version": "1.13.2",
+  "disableOnlineFeatures": true,
+  "enableRibbonIcon": false,
+  "ai": {
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true,
+    "providers": [
+      {
+        "name": "OpenAI",
+        "endpoint": "https://api.openai.com/v1",
+        "apiKey": "",
+        "models": [
+          {
+            "name": "text-davinci-003",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo-16k",
+            "maxTokens": 16384
+          },
+          {
+            "name": "gpt-3.5-turbo-1106",
+            "maxTokens": 16385
+          },
+          {
+            "name": "gpt-4",
+            "maxTokens": 8192
+          },
+          {
+            "name": "gpt-4-32k",
+            "maxTokens": 32768
+          },
+          {
+            "name": "gpt-4-1106-preview",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4-turbo",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4o",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4o-mini",
+            "maxTokens": 128000
+          }
+        ]
+      }
+    ]
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true,
+    "addDefaultAIProviders": true
+  }
+}

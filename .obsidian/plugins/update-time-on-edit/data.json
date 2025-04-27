@@ -1,0 +1,29 @@
+{
+  "dateFormat": "yyyy-MM-dd'T'HH:mm",
+  "enableCreateTime": true,
+  "headerUpdated": "updated",
+  "headerCreated": "created",
+  "minMinutesBetweenSaves": 1,
+  "ignoreGlobalFolder": [
+    "Meta"
+  ],
+  "ignoreCreatedFolder": [
+    "Meta"
+  ],
+  "enableExperimentalHash": true,
+  "fileHashMap": {
+    "Widgets.md": "c65d180a50c6f279befeda744a218187321cad64a761857f4c66900d8a703a07",
+    "Meta/Templates/Задачи template.md": "829272d4e8781ad747e911ee670a6c09078c8538ec1c52dceb9d1d0bdbd59012",
+    "Meta/Preloaded classes/__task_status__.md": "84b021145d74e81eb39f45cea412c3e78ad46da3159290586c2777afbd1f17f5",
+    "Meta/Preloaded classes/__task_status__ 1.md": "3ce3418bc7ddd6e97b1cfa3edf9b2c02da6682eb113c4af1924fddb476e06739",
+    "Meta/Preloaded classes/__task_status__ 2.md": "223d708f4afd5c90678f3577693b2a0b93656dc7c10690b1b279a783cf138d2c",
+    "Meta/Preloaded classes/__tags__.md": "411fe6a72d554d1eeeca37faffeb5203bb40a6f779d304fe5b77376054087ef8",
+    "Meta/__flash_cards__.md": "fce4540b1a0a01fc7859ce9df29e15fa05e9da2bc43d424a8e94a7bd7abe1377",
+    "Meta/Templates/Конспект template.md": "e3e25a949cc2048cee62b5c54f4fa3e028a079c2a963692f1e7ebf134b148733",
+    "Задачи/Проект.md": "7a1c9afaa16879f91c8cd8a636348d34b842d4e620c0f32520b57a7f67a88054",
+    "Конспекты/Алгосы.md": "dfcf56a0ff684a6c1d2c1c15d103c94b7c6f320104c0c2f34c3723efd831d292",
+    "Home.md": "cec870b17c3e63bec05c501a664da205257ee41c17f261a608e01f34f6b3f526",
+    "Задачи/Домашка.md": "e7d8ccb2fdb68cdb5f691e742eeb782a868b73f06757315dd64971df3c970dab",
+    "README.md": "aa9a25fad521dcba6661c4a2a779dd2fc1d400d1825003753b9c86f84ee7f3d3"
+  }
+}
